@@ -8,54 +8,54 @@ title: Features
   <h1 style="font-weight: normal">
     <strong>Fabric.js</strong> 是一个简单且强大的<br>Javascript <strong>HTML5 canvas 库</strong>
   </h1>
-  <h4 style="margin: 5px !important">Fabric provides <strong>interactive object model</strong> on top of canvas element</h4>
-  <h4 style="margin: 5px !important">Fabric also has <strong>SVG-to-canvas</strong> (and <strong>canvas-to-SVG</strong>) parser</h4>
+  <h4 style="margin: 5px !important">Fabric 在canvas中提供了 <strong>可操作对象模型</strong></h4>
+  <h4 style="margin: 5px !important">Fabric 也有 <strong>SVG-to-canvas</strong> (和 <strong>canvas-to-SVG</strong>) 渲染器</h4>
   <div style="position: relative">
     <canvas id="intro-canvas" width="500" height="1850"></canvas>
     <div class="tooltip simple-shapes">
-      Using Fabric.js, you can create and populate objects on canvas; objects like <b>simple geometrical shapes</b>
+      使用 Fabric.js, 你可以在canvas中创建填充一个对象; 比如 <b>几何图形</b>
     </div>
     <div class="tooltip complex-shapes">
-      or <b>complex shapes</b> consisting of hundreds or thousands of simple paths
+      or 由成百上千个简单路径组成的<b>复杂图形</b>
     </div>
     <div class="tooltip images">
-      or good old <b>images</b>
+      or 好看的 <b>图片</b>
     </div>
     <div class="tooltip text">
-      You can add <b>text</b> and dynamically manipulate its <b>size, alignment, font family</b>, and other properties
+      你可以添加 <b>文字</b> 并且能够动态的修改 <b>大小, 对齐方式, 字体</b>, 以及其他属性
     </div>
     <div class="tooltip gradients">
-      You can give any shape a <b>gradient</b>
+      你可以对任何形状进行 <b>倾斜</b>
     </div>
     <div class="tooltip filters">
-      and apply <b>image filters</b> to images
+      并且 在图片上 添加<b>滤镜</b>
     </div>
     <div class="tooltip animation">
-      There's built-in <b>animation</b> support
+      还有内置的 <b>动作系统</b>
     </div>
     <div class="tooltip groups">
-      You can <b>group</b> objects together, and manipulate them at the same time
+      你可以将多个对象<b>分组</b>, 在同时修改它们
     </div>
     <div class="tooltip shadows">
-      You can add <b>shadow</b> to any object. Or make it <b>draggable</b> only by its content. Try this star &rarr;
+      你可以给任何对象增加<b>阴影</b>. 或者让他变得 <b>可拖拽</b> 试试这个星星 &rarr;
     </div>
     <div class="tooltip flipping">
-      Objects can be easily <b>flipped</b> in any direction. Or <b>locked</b> in movement, scaling, etc.<br> &larr; Try these cats.
+      对象可以轻易的向不同方向<b>翻转</b>. 或者 <b>锁定</b> 运行方向, 缩放等.<br> &larr; 试试这个猫.
     </div>
     <div class="tooltip events">
-      There's an extensive <b>event</b> system
+      还有一个强大的 <b>事件</b> 系统
     </div>
     <div class="tooltip clipping">
-      You can <b>clip</b> any object to any shape
+      你可以 随便<b>裁剪</b> 图形
     </div>
     <div class="tooltip patterns">
-      or use <b>pattern</b> to fill its content
+      或者用<b>图案</b> 填充图形
     </div>
     <div class="tooltip freedrawing">
-      and, of course, use <b>free drawing</b> to create anything you like,<br /> <b>erasing</b> is supported as well
+      当然, 可以使用 <b>自由画笔</b> 创造任何你想要的,<br /> 同时也支持<b>橡皮擦</b>
     </div>
     <div class="tooltip serialization">
-      Canvas can be <b>serialized</b> to JSON or SVG, and <b>restored</b> at any time
+      画布 可以<b>序列化</b> 为 JSON 或者 SVG, 并且 支持<b>随时复原</b>
     </div>
   </div>
 
@@ -163,7 +163,7 @@ title: Features
       var styleU = {
         underline: true,
       };
-      var supportText = new fabric.Textbox("This lib is free for everyone.\nSome things are not.\nPeople behind FabricJS acknowledge that Black people have to fight for basic rights, against systemic racism, unequal opportunities and injustice across the 🌎.\nWe know this is wrong and we are 💔. 💪🏽💪🏾💪🏿!", {
+      var supportText = new fabric.Textbox("怕无归期，怕空欢喜", {
         width: 460,
         fontSize: 36,
         fontFamily: 'Helvetica',
@@ -474,24 +474,24 @@ window.ooo = text;
     };
   </script>
 
-  <h3>Other features include</h3>
-  <ul style="width: 250px; text-align: left; margin: 0 auto">
-    <li>Subclassing</li>
-    <li>Touch devices support</li>
-    <li>Node.js support <em>(and npm package)</em></li>
-  </ul>
+<!--  <h3>Other features include</h3>-->
+<!--  <ul style="width: 250px; text-align: left; margin: 0 auto">-->
+<!--    <li>Subclassing</li>-->
+<!--    <li>Touch devices support</li>-->
+<!--    <li>Node.js support <em>(and npm package)</em></li>-->
+<!--  </ul>-->
 
   <p class="next-steps">
-    <a href="/demos">Check out <b>demos</b></a>
-    <a href="/fabric-intro-part-1">Read <b>introduction</b></a><br />
-    <a href="//unpkg.com/fabric@4.6.0/dist/fabric.min.js">Download version <b>4.6.0</b></a>
+    <a href="/demos">查看 <b>demos</b></a>
+    <a href="/fabric-intro-part-1">阅读 <b>介绍</b></a><br />
+    <a href="//unpkg.com/fabric@4.6.0/dist/fabric.min.js">下载 <b>4.6.0</b></a>
   </p>
 
 </div>
 
-<div id="printio-lab-project">
-  <a href="http://printio.ru">Printio.ru</a> Lab Project
-</div>
+<!--<div id="printio-lab-project">-->
+<!--  <a href="http://printio.ru">Printio.ru</a> Lab Project-->
+<!--</div>-->
 <div id="changelog">
-  <a href="/changelog"><b>Read the CHANGELOG</b></a>
+  <a href="/changelog"><b>更新记录</b></a>
 </div>
