@@ -12,11 +12,10 @@ let client = new OSS({
 (async function() {
     console.log('开始同步OSS=============================')
     let list = await getList();
-    const reactFile = list.filter(file => /^fabricjs\/.*/.test(file.name))
     // 删除旧文件
-    for (let i = 0; i < reactFile.length; i++) {
-        await client.delete(reactFile[i].name)
-        console.log('删除文件'+reactFile[i].name);
+    for (let i = 0; i < list.length; i++) {
+        await client.delete(list[i].name)
+        console.log('删除文件'+list[i].name);
     }
     // 上传新的
     recursive('_site',async function (err,files) {
@@ -24,7 +23,7 @@ let client = new OSS({
         for (let index = 0; index < files.length; index++) {
             const filePath = files[index];
             const file = fs.readFileSync(filePath);
-            const filename = filePath.replace('_site/','fabricjs/')
+            const filename = filePath.replace('_site/','')
             console.time();
             await putObject(file, filename);
             console.timeEnd()
