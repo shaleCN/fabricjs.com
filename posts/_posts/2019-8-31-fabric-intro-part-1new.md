@@ -1,10 +1,10 @@
 ---
 layout: articleadmd
-title: Introduction to Fabric.js. Part 1.
+title: 介绍 Fabric.js. Part 1.
 ---
 
 
-## Introduction to Fabric.js. {#introduction_to_fabricjs}
+## 介绍 Fabric.js. {#introduction_to_fabricjs}
 
 <img src="https://github.com/kangax/fabric.js/raw/master/lib/screenshot.png" style="width:300px;border:1px solid #ccc;margin-bottom:20px">
 
